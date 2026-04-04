@@ -1,0 +1,41 @@
+# Core Data Science & ML
+numpy>=1.21.0
+pandas>=1.3.0
+scikit-learn>=1.0.0
+scipy>=1.7.0
+
+# Deep Learning
+torch>=1.10.0
+torchvision>=0.11.0
+ultralytics>=8.0.0
+
+# Computer Vision
+opencv-python>=4.5.0
+Pillow>=8.0.0
+scikit-image>=0.18.0
+
+# OCR
+pytesseract>=0.3.10
+
+# Visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Jupyter
+jupyter>=1.0.0
+notebook>=6.4.0
+ipykernel>=6.0.0
+
+# Model Persistence
+joblib>=1.1.0
+
+# Kaggle API (for dataset downloads)
+kaggle>=1.5.0
+
+# Web Framework (for document detection API)
+fastapi>=0.68.0
+uvicorn>=0.15.0
+python-multipart>=0.0.5
+
+# Progress bars
+tqdm>=4.60.0

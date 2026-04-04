@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citadel - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-section">
+            <h1>Citadel KYC</h1>
+            <p>AI-powered identity verification dashboard</p>
+        </div>
+
+        <div class="login-tabs">
+            <button class="login-tab active" onclick="switchAuthTab('login')">Login</button>
+            <button class="login-tab" onclick="switchAuthTab('register')">Sign Up</button>
+        </div>
+
+        <div id="login-form" class="auth-form active">
+            <h2>Welcome Back</h2>
+            <div class="input-group">
+                <label>Email</label>
+                <input id="email" type="email" placeholder="you@company.com">
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input id="password" type="password" placeholder="Enter password">
+            </div>
+            <button class="login-btn" onclick="login()">Sign In</button>
+        </div>
+
+        <div id="register-form" class="auth-form">
+            <h2>Create Account</h2>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input id="reg-name" type="text" placeholder="John Doe">
+            </div>
+            <div class="input-group">
+                <label>Email</label>
+                <input id="reg-email" type="email" placeholder="you@company.com">
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input id="reg-password" type="password" placeholder="Create password">
+            </div>
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input id="reg-confirm" type="password" placeholder="Confirm password">
+            </div>
+            <button class="login-btn" onclick="register()">Create Account</button>
+        </div>
+
+        <div class="signup-link" style="margin-top: 14px; text-align: center;">
+            <a href="dashboard.html">Open Dashboard</a> |
+            <a href="verification_flow.html">Verification Flow</a> |
+            <a href="analytics.html">Analytics</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
